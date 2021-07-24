@@ -1,0 +1,290 @@
+/* Base styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 98vw;
+    margin: 0 auto;
+    background-color: #EAEDF2;
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+:root {
+    --color-text: #282B31;
+    --color-text-gray: #A6ADB1;
+    
+    --color-primary: #1750FF;
+}
+
+/************************************
+Typography
+**************************************/
+h1 {
+    font-size: 3.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+
+    padding: 3.5rem 1rem;
+    padding-top: 5.5rem;
+}
+
+
+/************************************
+Reusable styling
+**************************************/
+
+.btn {
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 2px solid var(--color-primary);
+    border-radius: 15px;
+
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.7rem;
+    font-weight: 500;
+
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/************************************
+Header styling
+**************************************/
+
+header {
+    width: 100%;
+    height: 8rem;
+    background-color: white;
+
+    font-size: 1.6rem;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+
+    box-shadow: 0 5px 10px rgba(219, 223, 228, 0.8);
+}
+
+
+.navbar {
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    width: 19.2rem;
+    height: auto;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+
+    margin: 0 2rem;
+}
+
+.nav__item {
+    list-style-type: none;
+    margin-right: 4rem;  
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: var(--color-text-gray);
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__item:nth-child(2) a {
+    color: var(--color-text);
+}
+
+
+.nav__item a i{
+    font-size: 24px;
+    margin-right: 1rem;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile > img {
+    margin: 0 1rem;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+
+    background-color: #DDE1E8;
+    border-radius: 15px;
+
+    padding: 5px;
+}
+
+.plus-icon {
+    margin-right: 2rem;
+}
+
+.coin-stack-icon {
+    margin-right: 5px;
+}
+
+.points p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.points p {
+    margin-right: 3rem;
+}
+
+/************************************
+Main section styling
+**************************************/
+
+main {
+    max-width: 124rem;
+    margin: 8rem auto;
+    padding: 0rem 2rem 0 2rem;
+
+    font-size: 1.6rem;
+}
+
+/* News section */
+
+.news-popular {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 4rem;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    padding-right: 4rem;
+}
+
+.news-popular img {
+    width: 100%;
+    margin-right: 4rem;
+}
+
+.news-popular__text-box h2{
+    font-size: 3.4rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.news-popular__text-box small {
+    font-size: 1.4rem;
+    color: #5F5F6E;
+}
+
+.news-popular__text-box p {
+    margin: 2rem 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
+
+.news__card {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.news__card img {
+    width: 100%;
+}
+
+.news__card h3 {
+    font-size: 2rem;
+    font-weight: 600;
+
+    margin: 1.6rem 0 1rem 5px;
+}
+
+.news__card small {
+    margin-left: 5px;
+    font-size: 1.4rem;
+}
+
+/************************************
+Footer styling
+**************************************/
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: white;
+
+    font-size: 1.6rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+.footer__content {
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 2.3rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__icons i {
+    font-size: 2rem;
+    color: var(--color-text);
+
+    margin-right: 2rem;
+}
+
+.footer__text {
+    color: var(--color-text);
+}
